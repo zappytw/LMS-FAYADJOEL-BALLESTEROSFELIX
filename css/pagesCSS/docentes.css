@@ -105,23 +105,18 @@
     transition: ease 1s;
 }
 #bigProfesorDiv{
-    justify-self: center;
-    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(600px, max-content));
     width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 20px;
     border-radius: 10px;
-    z-index: 1001;
-    justify-content: center;
-    position: fixed;
-    inset: 0;
-    background-color: transparent;
+
 }
 .persInfoDiv, .otherDiv{
-    max-width: 700px;
-    width: 80vw;
+    width: 600px;
     height: 700px;
     border-radius: 10px;
     z-index: 1001;
@@ -131,6 +126,8 @@
     box-sizing: border-box ;
     flex-direction: column;
     background-color: white;
+    border: 1px solid;
+    
 }
 .profesorInfoImg{
     width: 200px;
