@@ -249,6 +249,7 @@ const cursosDisponibles = {
 
 const profesores = [
   {
+    active: true,
     codigo: "PROF001",
     identificacion: "1023456789",
     nombres: "Laura",
@@ -261,6 +262,7 @@ const profesores = [
     ]
   },
   {
+    active: true,
     codigo: "PROF002",
     identificacion: "1034567891",
     nombres: "Carlos",
@@ -274,6 +276,7 @@ const profesores = [
     ]
   },
   {
+    active: true,
     codigo: "PROF003",
     identificacion: "1045678912",
     nombres: "Mariana",
@@ -286,6 +289,7 @@ const profesores = [
     ]
   },
   {
+    active: true,
     codigo: "PROF004",
     identificacion: "1056789123",
     nombres: "Andrés",
@@ -298,6 +302,7 @@ const profesores = [
     ]
   },
   {
+    active: true,
     codigo: "PROF005",
     identificacion: "1067891234",
     nombres: "Valentina",
@@ -310,6 +315,7 @@ const profesores = [
     ]
   },
   {
+    active: true,
     codigo: "PROF006",
     identificacion: "1078912345",
     nombres: "Sebastián",
@@ -322,6 +328,7 @@ const profesores = [
     ]
   },
   {
+    active: true,
     codigo: "PROF007",
     identificacion: "1089123456",
     nombres: "Daniela",
@@ -334,6 +341,7 @@ const profesores = [
     ]
   },
   {
+    active: true,
     codigo: "PROF008",
     identificacion: "1091234567",
     nombres: "Juan",
@@ -346,6 +354,7 @@ const profesores = [
     ]
   },
   {
+    active: true,
     codigo: "PROF009",
     identificacion: "1102345678",
     nombres: "Camila",
@@ -358,6 +367,7 @@ const profesores = [
     ]
   },
   {
+    active: true,
     codigo: "PROF010",
     identificacion: "1113456789",
     nombres: "Miguel",

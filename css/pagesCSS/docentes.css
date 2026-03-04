@@ -22,7 +22,8 @@
 #tableDiv{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: fit-content;
+    max-width: 90vw;
     gap: 20px;
     border: 2px solid;
     padding: 20px;
@@ -91,7 +92,13 @@
     cursor: pointer;
 }
 #searchSelect{
-    width: 100px;
+    width: 200px;
     border-left: none;
     border-right: none;
+    background-color: rgb(202, 202, 202);
+
+}
+
+#searchSelect option{
+    transition: ease 1s;
 }
