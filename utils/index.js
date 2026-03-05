@@ -15,8 +15,12 @@ loginForm.addEventListener("submit",(e) => {
     const inputEmail = formData.get("email")
     const inputPassword = formData.get("password")
 
+    let usuarioLogeado;
+
     administradores.forEach( a => {
         if (a.email === inputEmail && a.password === inputPassword) {
+            usuarioLogeado = a
+            localStorage.setItem("usuarioLogeado", JSON.stringify(usuarioLogeado));
             window.location.href = "./pages/dashBoard.html";
         }else{
             msgError.classList.add("aparecer")

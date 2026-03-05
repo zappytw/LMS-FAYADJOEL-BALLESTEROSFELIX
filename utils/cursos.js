@@ -115,6 +115,8 @@ añadirSelectCategoriaProfeForm();
 
 //aparecer el formulario
 btnCrearForm.addEventListener("click",()=>{
+    crearCursoForm.reset();
+    document.getElementById("btnCrearCurso").textContent = "Crear";
     divCCF.classList.remove("invi")
 })
 
@@ -268,6 +270,8 @@ pageContent.addEventListener("click", function(event) {
     }
 
     if (event.target.closest(".btnEdit")) {
+        document.getElementById("btnCrearCurso").textContent = "Edict";
+
         cursosDisponibles = eliminarCurso(IDcurso)
         localStorage.setItem(
             "cursosDisponibles",
@@ -322,6 +326,7 @@ pageContent.addEventListener("click", function(event) {
 
 crearCursoForm.addEventListener("submit", function(e) {
     e.preventDefault();
+
     const formData = new FormData(crearCursoForm);
 
     const arrayTemas = formData.get("temas")

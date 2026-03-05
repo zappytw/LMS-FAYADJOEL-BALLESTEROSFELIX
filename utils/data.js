@@ -354,7 +354,7 @@ const profesores = [
     ]
   },
   {
-    active: true,
+    active: false,
     codigo: "PROF009",
     identificacion: "1102345678",
     nombres: "Camila",
@@ -367,7 +367,7 @@ const profesores = [
     ]
   },
   {
-    active: true,
+    active: false,
     codigo: "PROF010",
     identificacion: "1113456789",
     nombres: "Miguel",
