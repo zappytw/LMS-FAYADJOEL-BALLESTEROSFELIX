@@ -5,38 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <link rel="stylesheet" href="./css/vars.css">
-    <link rel="stylesheet" href="css/main.css">
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&display=swap" rel="stylesheet">
     <!--ICONS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="./css/vars.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/pagesCSS/index.css">
 </head>
 <body>
-    <nav>
-        <p class="logo">ABC</p>
-        <div class="navMenu">
-            <a href="index.html">Dashboard</a>
-            <a href="pages/cursos.html">Cursos</a>
-            <a href="pages/docentes.html">Docentes</a>
-            <a href="">Administrativos</a>
+    <div id="msgError" class="mensajError">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <div>
+            <h2>No se encontro</h2>
+            <p>intentelo de nuevo</p>
         </div>
-        <div class="profileDiv">
-            <button class="themeBtn">
-                <img src="media/sun.png" alt="">
-            </button>
-            <button class="profileBtn">
-                <img src="media/profilePlaceholder.png" alt="">
-                <div class="userName">Pepito Perez</div>
-                <i class="fa-solid fa-sort-down"></i>
-            </button>
+    </div>
+    <form id="loginForm" class="loginForm">
+        <h1>Login</h1>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="text" placeholder="Ingrese el email">
         </div>
-    </nav>
-    
-    <main>
-        
-    </main>
+        <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input id="password" name="password" type="password" placeholder="Ingrese la contraseña">
+        </div>
+        <button type="submit">Ingresar</button>
+    </form>
 </body>
+<script type="module" src="./utils/index.js"></script>
 </html>

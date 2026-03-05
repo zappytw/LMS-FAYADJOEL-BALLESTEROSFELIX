@@ -382,6 +382,99 @@ const profesores = [
   }
 ];
 
+const administradores = [
+  {
+    identificacion: "100100001",
+    nombres: "Juan Carlos",
+    apellidos: "Pérez Gómez",
+    email: "juan.perez@empresa.com",
+    telefono: "3001110001",
+    cargo: "Administrador",
+    password: "admin123"
+  },
+  {
+    identificacion: "100100002",
+    nombres: "María Fernanda",
+    apellidos: "López Rodríguez",
+    email: "maria.lopez@empresa.com",
+    telefono: "3001110002",
+    cargo: "Administrador",
+    password: "admin234"
+  },
+  {
+    identificacion: "100100003",
+    nombres: "Carlos Andrés",
+    apellidos: "Ramírez Torres",
+    email: "carlos.ramirez@empresa.com",
+    telefono: "3001110003",
+    cargo: "Administrador",
+    password: "admin345"
+  },
+  {
+    identificacion: "100100004",
+    nombres: "Laura Sofía",
+    apellidos: "Martínez Díaz",
+    email: "laura.martinez@empresa.com",
+    telefono: "3001110004",
+    cargo: "Administrador",
+    password: "admin456"
+  },
+  {
+    identificacion: "100100005",
+    nombres: "Andrés Felipe",
+    apellidos: "Gómez Castro",
+    email: "andres.gomez@empresa.com",
+    telefono: "3001110005",
+    cargo: "Administrador",
+    password: "admin567"
+  },
+  {
+    identificacion: "100100006",
+    nombres: "Diana Carolina",
+    apellidos: "Herrera Vargas",
+    email: "diana.herrera@empresa.com",
+    telefono: "3001110006",
+    cargo: "Administrador",
+    password: "admin678"
+  },
+  {
+    identificacion: "100100007",
+    nombres: "Pedro Luis",
+    apellidos: "Morales Rojas",
+    email: "pedro.morales@empresa.com",
+    telefono: "3001110007",
+    cargo: "Administrador",
+    password: "admin789"
+  },
+  {
+    identificacion: "100100008",
+    nombres: "Camila Andrea",
+    apellidos: "Suárez Medina",
+    email: "camila.suarez@empresa.com",
+    telefono: "3001110008",
+    cargo: "Administrador",
+    password: "admin890"
+  },
+  {
+    identificacion: "100100009",
+    nombres: "Jorge Alberto",
+    apellidos: "Castillo Peña",
+    email: "jorge.castillo@empresa.com",
+    telefono: "3001110009",
+    cargo: "Administrador",
+    password: "admin901"
+  },
+  {
+    identificacion: "100100010",
+    nombres: "Natalia Paola",
+    apellidos: "Ortega Silva",
+    email: "natalia.ortega@empresa.com",
+    telefono: "3001110010",
+    cargo: "Administrador",
+    password: "admin012"
+  }
+];
+
 export function inicializarCursosDisponibles(){
   const cursosDisponiblesExists = localStorage.getItem("cursosDisponibles");
 
@@ -399,6 +492,17 @@ export function inicializarProfesores(){
   if(!profesoresExists){
     console.log("No se encontraron datos previamente colocador usaremos los de por defecto")
     localStorage.setItem("profesores", JSON.stringify(profesores));
+  }else{
+    console.log("Datos encontrados exitosamente")
+  }
+}
+
+export function inicializarAdministradores(){
+  const administradoresExists = localStorage.getItem("administradores");  
+
+  if(!administradoresExists){
+    console.log("No se encontraron datos previamente colocador usaremos los de por defecto")
+    localStorage.setItem("administradores", JSON.stringify(administradores));
   }else{
     console.log("Datos encontrados exitosamente")
   }
