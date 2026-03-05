@@ -93,52 +93,96 @@ nav a:active{
     background-color: black;
     transform: translateY(0);
 }
+
 .navMenu{
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
 }
 
+/*------------------------------*/
+
 .profileDiv{
     display: flex;
+    justify-content: center;
     gap: 20px;
-    align-items: center;
+
+    align-self: flex-start;
+    margin-top: 20px;
 }
-.profileBtn{
-    gap: 10px;
-    height: 50px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    border: 1px solid transparent;
-    padding: 8px;
-    border-radius: 10px;
-}
-.profileBtn img{
-    width: 20px;
-}
+
+
+/* Theme button */
+
 .themeBtn{
     width: 40px;
     height: 40px;
+
+    align-self: start;
+
     background-color: transparent;
+    border: none;
     border-radius: 10px;
 }
+
 .themeBtn img{
     width: 40px;
     height: 40px;
 }
-.profileDiv button:hover{
-    background-color: rgb(31, 31, 31);
-}
 
-.profileDiv button {
-    border: 1px solid transparent;
-    cursor: pointer;
+
+/* Profile panel */
+
+.profilePanel{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: ease 0.4s;
+
+    align-self: center;
 }
+
+.profilePanel img{
+    width: 20px;
+}
+
+
+/* Profile button */
+
+.btnProfile{
+    display: flex;
+
+    justify-self: center;
+    align-self: center;
+
+    height: 100%;
+    gap: 10px;
+    padding: 10px;
+
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+/* Profile options */
+
+.profilePanel .opts{
+    display: none;
+    flex-direction: column;
+
+    width: 86%;
+    padding: 10px;
+
+    font-size: 12px;
+    background-color: black;
+
+    z-index: 1000;
+}
+
+.profilePanel:hover .opts{
+    display: flex;
+}
+
 
 /*CLASES IMPORTENTES*/
 
