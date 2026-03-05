@@ -42,13 +42,18 @@
             <header>
                 <h1 class="pageTitle">Docentes</h1>
             </header>
-            <form id="searchForm">
-                <input type="text" name="" id="searchInput" placeholder="Buscar">
-                <select name="" id="searchSelect" placeholder="aa">
-                    <option value="">Todas las Áreas</option>
-                </select>
-                <button id="searchBtn">Buscar</button>
-            </form>
+            <div class="searchAddDiv">
+                <form id="searchForm">
+                    <input type="text" name="" id="searchInput" placeholder="Buscar">
+                    <select name="" id="searchSelect">
+                        <option value="">Todas las Áreas</option>
+                    </select>
+                    <button id="searchBtn">Buscar</button>
+                </form>
+                <button class="btn addBtn" id="addBtn"><i class="fa-solid fa-plus"></i>
+                <span>Nuevo docente</span></button>
+            </div>
+            
 
             <div id="tableDiv">
                 <div class="tableHeaderDiv">
@@ -71,15 +76,15 @@
                 <dl class="persInfo">
                     <div>
                         <dt>Nº Documento</dt>
-                        <dd id="persInfoDocument">Cargando...</dd>
+                        <input id="persInfoDocument"class="dd" disabled value="si lees"></input>
                     </div>
                     <div>
                         <dt>Correo Electrónico</dt>
-                        <dd id="persInfoEmail">Cargando.../dd>
+                        <input id="persInfoEmail"class="dd" disabled value="esto es porque"></input>
                     </div>
                     <div>
                         <dt>ID</dt>
-                        <dd id="persInfoId">Cargando...</dd>
+                        <input id="persInfoId"class="dd" disabled value="hay un error"></input>
                     </div>
                 </dl>
             </div>
