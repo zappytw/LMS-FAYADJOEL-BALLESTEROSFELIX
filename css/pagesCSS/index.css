@@ -1,0 +1,91 @@
+body{
+    background-image: url("../../media/bgLoginPage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.loginForm{
+    position: fixed;
+
+    width: 300px;
+    height: 400px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.loginForm .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding: 5px;
+
+    background-color: transparent;
+    color: #222831;
+}
+
+input::placeholder{
+    color: rgb(58, 58, 58);
+}
+
+button{
+    width: 179px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFD369;
+}
+
+/*mensaje de error*/
+
+.mensajError{
+    position: fixed;
+
+    top: 10px;
+    right: -300px;
+
+    width: 230px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 5px;
+
+    background-color: #E53935;
+
+    transition: all ease 1s;
+}
+
+.mensajError i{
+    font-size: 40px;
+}
+
+.aparecer{
+    right: 10px;
+}
