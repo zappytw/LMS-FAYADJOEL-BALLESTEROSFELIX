@@ -1,8 +1,14 @@
 import{inicializarProfesores, inicializarCursosDisponibles} from "./data.js"
-import { cargarTema ,cambiarTema} from "./basicFuntions.js"
+import { cargarTema ,cambiarTema, modificarProfilePanel} from "./basicFuntions.js"
 
-cargarTema();
+cargarTema()
+modificarProfilePanel()
+
 document.getElementById("themeBtn").addEventListener("click",cambiarTema)
+
+//solo puede modificar de aca para abajo
+//lo de arriba no se toca hp garrrr
+//borre el mensaje cunado lo vea gracias
 
 inicializarProfesores();
 inicializarCursosDisponibles();
