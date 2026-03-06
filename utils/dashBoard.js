@@ -68,7 +68,7 @@ function profesoresInactivos(){
     table.classList.add("tablaInactivos")
 
     table.innerHTML = `
-            <tr>
+            <tr class="titulos">
                 <th>Codigo</th>
                 <th>Nombres</th>
                 <th>Apellidos</th>
@@ -86,6 +86,7 @@ function profesoresInactivos(){
         `
     })
 
+    main.innerHTML += "<h1><i class='fa-solid fa-circle-exclamation'></i> Docentes Inactivos</h1>"
     main.appendChild(table)
 }
 

@@ -10,7 +10,7 @@ body{
     position: fixed;
 
     width: 300px;
-    height: 400px;
+    height: auto;
 
     top: 50%;
     left: 50%;
@@ -25,9 +25,8 @@ body{
     padding: 20px;
 
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.199);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 .loginForm .form-group{
@@ -62,6 +61,10 @@ button{
 .loginForm a{
     text-decoration: none;
     color: #002a68;
+}
+
+.loginForm img{
+    width: 120px;
 }
 
 .loginOpts{
