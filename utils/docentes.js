@@ -313,8 +313,7 @@ async function popupConfirm(message) {
 }
 areasEditProfesorForm.addEventListener("submit",async (e)=>{
     e.preventDefault()
-    if(persInfoName.value.trim()==="" || persInfoLastName.value.trim()===""
-    || persInfoDocument.value.trim()===""|| persInfoEmail.value.trim()===""
+    if(persInfoName.value.trim()==="" || persInfoDocument.value.trim()===""|| persInfoEmail.value.trim()===""
     || persInfoId.value.trim()===""
     ){
     await popupConfirm("Un campo está vacio, asegurese de llenar todos los campos al crear un nuevo usuario")
@@ -371,10 +370,12 @@ areasEditProfesorForm.addEventListener("submit",async (e)=>{
             },
         )
         //GUARDAR DATOS EN LOCALSTORAGE
-            localStorage.setItem("profesores", JSON.stringify(profesores))
+            
     }
+    
     }
 //FINALMENTE, RECARGAR LA PAGINA PARA APLICAR CAMBIOS
+    localStorage.setItem("profesores", JSON.stringify(profesores))
     window.location.href="docentes.html"
 } else {
     cerrarEdit()
