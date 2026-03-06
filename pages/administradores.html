@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administradores | LMS</title>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&display=swap" rel="stylesheet">
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="../css/vars.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/pagesCSS/docentes.css">
+</head>
+<body>
+    <nav>
+        <div class="logoDiv">
+            <p class="logo">ABC</p>
+            <div class="DesplegableMenu">
+                <a href="./dashBoard.html">Dashboard</a>
+                <a href="./cursos.html">Cursos</a>
+                <a href="./docentes.html">Docentes</a>
+                <a href="./administradores.html">Administrativos</a>
+            </div>
+        </div>
+        <div class="navMenu">
+            <a href="./dashBoard.html">Dashboard</a>
+            <a href="./cursos.html">Cursos</a>
+            <a href="./docentes.html">Docentes</a>
+            <a href="./administradores.html">Administrativos</a>
+        </div>
+        <div class="profileDiv">
+            <button id="themeBtn" class="themeBtn">
+                <img src="../media/moon.png" alt="">
+            </button>
+            <div class="profilePanel">
+                <div class="btnProfile">
+                    <img src="../media/profilePlaceholder.png" alt="">
+                    <div class="userName">User Options</div>
+                </div>
+                <div class="opts">
+                    <a href="./profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+                    <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+                    <a href="../index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <h1 class="pageTitle">Docentes</h1>
+        </header>
+        <div class="searchAddDiv">
+            <form id="searchForm">
+                <input type="text" name="" id="searchInput" placeholder="Buscar">
+                <select name="" id="searchSelect">
+                    <option value="">Todas las Áreas</option>
+                </select>
+                <button id="searchBtn">Buscar</button>
+            </form>
+            <button class="btn addBtn" id="addBtn"><i class="fa-solid fa-plus"></i>
+            <span>Nuevo docente</span></button>
+        </div>
+        
+        <div id="tableDiv">
+            <div class="tableHeaderDiv">
+                <div>Nombre</div>
+                <div>Còdigo</div>
+                <div>Email</div>
+                <div>Àrea</div>
+                <div></div>
+            </div>
+        </div>
+    </main>
+    <div id="overlay" class="hidden hide-scrollbar">
+        <div id="bigProfesorDiv" class="hidden">
+            <form class="persInfo" id="persInfoForm">
+            <div class="persInfoDiv">
+                <div class="profesorProfile">
+                <img class="profesorInfoImg" id="persInfoImg" src="../media/profilePlaceholder.png" alt="">
+                <div>
+                    <input id="persInfoName" class="dd inputTextStyle" placeholder="Nombres" oninput="this.style.width = (this.value.length + 1) + 'ch'" maxlength="23" minlength="5" disabled>
+                    <input id="persInfoLastName" class="dd hidden inputFormStyle inputTextStyle " placeholder="Apellidos" oninput="this.style.width = (this.value.length + 1) + 'ch'" maxlength="23" minlength="5" value="algo">
+                </div>
+                </div>
+                <hr>
+                    <div>
+                        <div class="dt">Nº Documento</div>
+                        <input id="persInfoDocument"class="dd" disabled placeholder="Número de documento" name="document" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                    </div>
+                    <div>
+                        <div class="dt">Correo Electrónico</div>
+                        <input id="persInfoEmail"class="dd" disabled placeholder="Correo Electrónico" name="email" type="email">
+                    </div>
+                    <div>
+                        <div class="dt">ID</div>
+                        <input id="persInfoId"class="dd" disabled value="hay un error" name="ID"oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="otherDiv">
+                <form action="" id="editProfesorForm">
+                    <div class="dt">Área académica</div>
+                    <select name="area" id="nivelAccesoSelect" class="dd"></select>
+                    <div class="dt">Área académica</div>
+                    <select name="area" id="sedeSelect" class="dd"></select>
+                    <div class="dt">Área académica</div>
+                    <select name="area" id="jornadaSelect" class="dd"></select>
+                    </div>
+                    <button class="btn submitProfesor">Guardar Cambios</button>
+                </form>
+            </div>
+        </div>
+        <div class="popupMessage hidden" id="popup">
+            <div id="popupText">ola!!!</div>
+            <button class="btn okButton" id="notBtn">Cancelar</button>
+            <button class="btn okButton" id="okBtn">Ok</button>
+        </div>
+    </div>
+</body>
+<script src="../utils/administradores.js" type="module"></script>
+</html>
